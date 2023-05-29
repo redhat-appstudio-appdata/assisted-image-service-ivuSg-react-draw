@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: assisted-image-service-g1ho
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/assisted-installer-tenant/assisted-image-service/assisted-image-service-g1ho@sha256:9eba2b56d0cdf1fba89a2999a6927b9cbadd6bb5fe392a554e39722c12a3520c
+        name: my-go
+        resources: {}
+status: {}
