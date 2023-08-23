@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: assisted-image-service-g1ho
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-user-workloads/assisted-installer-tenant/assisted-image-service/assisted-image-service-g1ho@sha256:aa0d2ae546e1ac0a39d90dfb6a64b70bf39e65547d7c64cad57befc6d24018f0
         name: my-go
         ports:
         - containerPort: 8081
